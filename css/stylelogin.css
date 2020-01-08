@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif,"微軟正黑體";
+}
+
+body{
+  background :#FFFDE7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bg {
+  position: fixed;
+  height: 1024px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.bg img {
+  height: 1024px;
+  min-width: 743px; 
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.topimgpic{
+    width: 20%;
+    display: block;
+    text-align: center;
+    margin: 10px auto 0px auto;
+}
+.row{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+/* 上面Login Signup部分 */
+.wrapper{
+  box-sizing: border-box;
+  margin: 10px 30px 40px 30px;
+  width: 700px;
+  height: 100%;
+  position: relative;
+  top: 30%;
+  /* 垂直置中 */
+  
+}
+
+
+.wrapper .container .tabs ul{
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.wrapper .container .tabs ul li{
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.wrapper .container .tabs ul li.active{
+  border-bottom: 2px solid #fff;
+}
+
+.wrapper .container .signup,
+.wrapper .container .login{
+  margin-top: 20px;
+}
+
+.wrapper .container .input_field{
+  margin-bottom: 15px;
+}
+
+.wrapper .container .input_field .input{
+  width: 100%;
+  padding: 10px 23px;
+  border: 0;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.wrapper .container {
+  margin-top: 20px;
+  background: #008F95;
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.wrapper .container  a{
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+button{
+  border-radius: 40px;
+  border: 1px solid #F48691;
+  background-color: #F48691;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+  transition: transform 80ms ease-in;
+  margin-top: 5px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+button:hover {
+  cursor: pointer; 
+  background-color: #FB7E60;
+
+}
+button:active {
+  transform: scale(0.95);
+}
+button:focus {
+  outline: none;
+}
+.text-input{
+  background-color:#fff;
+  font-size: 24px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 420px) {
+
+  .topimgpic{
+    width: 125px;
+    height: 125px;
+  }
+  .wrapper{
+    margin: 0 auto;
+    width: 300px;    
+    margin: 0 auto 20px auto;
+  }
+  .container{
+    box-sizing:border-box;
+    padding:10px;
+    height: 100%;
+
+  }
+  .tabs>ul>li{
+    font-size: 20px;
+  }
+  
+  .wrapper .container .tabs ul li{
+    font-size: 24px;
+    padding-top: 5px;
+    margin: 0 auto;
+  
+  }
+  .wrapper .container .input_field .input{
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 10px 10px;
+
+  }
+
+  button{
+    border-radius: 40px;
+    font-size: 24px;
+    padding: 20px 80px;
+    margin: 20px auto;
+  }
+ 
+  
+}
+
+@media screen and (min-width: 768px){
+.topimgpic{
+  width: 300px;
+  height: 300px;
+}
+.container{
+  height: 80%;
+  margin: 30px 20px;
+}
+.tabs>ul>li{
+  font-size: 10px;
+}
+
+.wrapper .container .tabs ul li{
+font-size: 40px;
+padding-top: 10px;
+
+}
+.wrapper .container .input_field .input{
+  font-size: 50px;
+  margin: 30px auto;
+  padding: 25px 10px;
+}
+.wrapper{
+  height: 100%;
+}
+button{
+  font-size: 30px;
+  padding: 20px 80px;
+  margin-top: 20px;
+  border-radius: 80px;
+}
+
+ 
+}
